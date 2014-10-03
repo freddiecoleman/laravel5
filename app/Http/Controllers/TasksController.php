@@ -1,7 +1,12 @@
 <?php namespace App\Http\Controllers;
 
+use App\Http\Requests\CreateTaskRequest;
 use Illuminate\Routing\Controller;
 
+/**
+ * Class TasksController
+ * @package App\Http\Controllers
+ */
 class TasksController extends Controller {
 
 	/**
@@ -24,14 +29,13 @@ class TasksController extends Controller {
 		return view('tasks.create');
 	}
 
-	/**
-	 * Store a newly created resource in storage.
-	 *
-	 * @return Response
-	 */
-	public function store()
+
+    /**
+     * @param CreateTaskRequest $createTaskRequest
+     */
+    public function store(CreateTaskRequest $createTaskRequest)
 	{
-		//
+        dd('u wot m8');
 	}
 
 	/**

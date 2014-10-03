@@ -12,7 +12,7 @@ class CreateTaskRequest extends FormRequest {
 	public function rules()
 	{
 		return [
-			//
+			'task' => 'required'
 		];
 	}
 
@@ -23,7 +23,7 @@ class CreateTaskRequest extends FormRequest {
 	 */
 	public function authorize()
 	{
-		return false;
+		return true;
 	}
 
 }
